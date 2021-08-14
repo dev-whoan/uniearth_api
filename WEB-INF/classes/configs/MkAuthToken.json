@@ -1,8 +1,7 @@
 {
 	"Controller":{
 		"level":"debug",
-		"algorithm":"HS256",
-		"secret":"mysecretkey",
+		"algorithm":"HMACSHA256",
 		"auths":{
             "sql":{
                 "controller":"user",
@@ -14,8 +13,14 @@
             }
 		},
 		"payload":{
-			"username":"id",
-			"userclass":"nickname"
+			"useremail":"id",
+			"usernickname":"nickname",
+            "profileimg":"profileimg",
+            "sex":"sex",
+            "bookmark":"bookmark",
+            "like":"user_like",
+            "lastlogin":"lastlogin"
+
 		}
 	}
 }

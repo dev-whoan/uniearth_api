@@ -12,7 +12,11 @@
 					"column":{
 						"1":"uniearth_user_id as id",
                         "2":"uniearth_user_nickname as nickname",
-                        "3":"uniearth_user_timestamp as lastlogin"
+                        "3":"uniearth_user_profileimg as profileimg",                        
+                        "4":"uniearth_user_sex as sex",
+                        "5":"uniearth_user_bookmark as bookmark",
+                        "6":"uniearth_user_liked as user_like",
+                        "7":"uniearth_user_timestamp as lastlogin"
 					},
 					"table":{
                         "from":"uniearth_user"

@@ -8,7 +8,9 @@
 		"condition":{
 			"1":"SEQ",
 			"2":"file_post",
-			"3":"file_owner"
+			"3":"file_owner",
+            "4":"file_path",
+            "5":"file_size"
 		},
 		"parameter":{
 			"1":"*"
@@ -30,6 +32,26 @@
 						"1":""
 					},
 					"where":""
+				}
+			},
+            {
+				"id":"createFiles",
+				"query":{
+					"crud":"insert",
+					"column":{
+						"1":"file_post",
+						"2":"file_owner",
+                        "3":"file_path",
+                        "4":"file_size"
+					},
+					"data":{
+                        "1":"file_post",
+						"2":"file_owner",
+                        "3":"file_path",
+                        "4":"file_size"
+					},
+					"where":""
+					
 				}
 			},
 			{

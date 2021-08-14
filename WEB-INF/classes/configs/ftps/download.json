@@ -3,6 +3,7 @@
             "name":"freeboard",
             "path":"/files",
             "debug":"error",
+            "auth":"no",
             "services":[
                     {
                             "id":"posts",
@@ -25,7 +26,6 @@
                             "id":"comments",
                             "type":"ftp-receiver",
                             "servicepath":"/comment",
-                            "dir":"user_prefix",
                             "hash_dir":"true",
                             "max_count":"1",
                             "format":{

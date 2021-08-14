@@ -32,6 +32,22 @@
                     "6":"file_timestamp"
 				}
 			},
+            {
+				"page_static":"false",
+				"type":{
+					"kind":"sql",
+					"id":"createFiles"
+				},
+				"method":"post",
+				"obj":"list",
+				"parameter_name":"",
+				"value":{
+                    "1":"file_post",
+                    "2":"file_owner",
+                    "3":"file_path",
+                    "4":"file_size"
+				}
+			},
 			{
 				"page_static":"false",
 				"type":{
@@ -75,7 +91,8 @@
 				"value":{
 					"1":"SEQ",
 					"2":"file_post",
-					"3":"file_owner"
+					"3":"file_owner",
+                    "4":"file_path"
 				}
 			}
 		]
