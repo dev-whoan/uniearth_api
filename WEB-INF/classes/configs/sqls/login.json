@@ -1,0 +1,28 @@
+{
+	"Controller": {
+		"name":"user",
+		"debug":"error",
+		"db":"dogood",
+		"api":"no",
+		"services":[
+			{
+				"id":"user_login",
+				"query":{
+					"crud":"select",
+					"column":{
+						"1":"uniearth_user_id as id",
+                        "2":"uniearth_user_nickname as nickname",
+                        "3":"uniearth_user_timestamp as lastlogin"
+					},
+					"table":{
+                        "from":"uniearth_user"
+                    },
+					"data":{
+						"1":""
+					},
+					"where":"uniearth_user_id = @user_id@ AND uniearth_user_pw = @user_pw@"
+				}
+			}
+		]
+	}
+}
